@@ -12,6 +12,16 @@ html {
   height: 100%;
 }
 
+.photo {
+    text-align: center; /*for centering images inside*/
+}
+
+.photo img {
+    width: 700px; /*set the width or max-width*/
+    height: auto; /*this makes sure to maintain the aspect ratio*/
+}
+
+
 h1,
 h2,
 h3,
