@@ -1,0 +1,237 @@
+
+/* Page */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+.container { 
+    padding: 40px 180px; 
+}
+
+/* Background */
+.backgroundGrey {
+    background-color: grey;
+    color: white;
+}
+.backgroundWhite {
+    background-color: white;
+}
+.backgroundDarkGrey {
+    background-color: #232424;
+    color: white;
+}
+.backgroundGrey hr {
+    border-color: lightgray;
+}
+
+/* Phone Settings  */
+@media (max-width: 767px){
+    .phone-hidden{
+        display: none;
+    }
+
+    /* Navigation */
+    /* Header */
+
+}
+
+/* Navigation */
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    font-weight: bold;
+    font-size: larger;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+#nav-bar li a:hover{
+    color: #989797!important; 
+}
+.navbar{
+    background: #eeeeee;
+}
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    color: #000000!important;
+    font-weight: 600;
+    /* font-size: 16px; */
+}
+.navbar-nav .dropdown {
+    float: right;
+    text-align: left;
+}
+.navbar-nav .dropdown .dropdown-menu{
+    align-self: right;
+    text-align: left;
+    offset: 100;
+}
+
+/* Header */
+.jumbotron {
+    background: no-repeat center right fixed url("./img/Philly-bg2.jpg");
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("./img/Philly-bg2.jpg");
+    background-size: cover;
+    height: max-content;
+    position: relative;
+}
+.jumbotron .container {
+    color: white;
+    text-align: center;
+}
+.jumbotron .container h1 { 
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    display: inline-block; 
+    font-family: 'Varela Round', sans-serif;
+    font-size: 500%;
+    text-emphasis-color: blue;
+}
+.jumbotron .container h3 { 
+    padding-bottom: 20px; 
+    display: inline-block; 
+}
+.jumbotron .scroll-down{
+    float: center;
+}
+.jumbotron .btn {
+    font-size: 25px;
+    color: lightgray;
+    background-color: rgba(78, 24, 128, 0.5);
+    border-color: rgba(78, 24, 128, 0.5);
+}
+.jumbotron .btn:hover{
+    font-size: 25px;
+    color: lightgray;
+    background-color: rgba(78, 24, 128, 0.7);
+    border-color: rgba(78, 24, 128, 0.7);
+}
+.jumbotron .btn:active{
+    color: lightgray;
+    background-color: rgba(78, 24, 128, 0.7) !important;
+    border-color: rgba(78, 24, 128, 0.7) !important;
+}
+.jumbotron .btn:focus{
+    color: lightgray;
+    background-color: rgba(78, 24, 128, 0.7);
+    border-color: rgba(78, 24, 128, 0.7);
+}
+.jumbotron ion-icon {
+    color: white!important;
+    font-size: 40px;
+    padding: none;
+}
+
+/* About */
+#about .container{
+    background-color: white;
+    border-radius: 25px;
+}
+#about .container img {
+    width: 100%;
+    height: 100%;
+}
+#about .container .row{
+    background-color:  rgb(167, 167, 167);
+
+}
+#about .container .col-md-5 {
+    overflow-y: scroll; 
+    height: 450px;
+    background-color: rgb(167, 167, 167);
+    border-radius: 25px;
+    padding:10px;
+}
+#about .container .col-md-5 li{
+    margin-left: 15px;
+}
+
+/* Pillars */
+
+#pillars{
+    padding: 0%;
+}
+#pillars h4{
+    text-decoration: underline;
+}
+#pillars .pillar-text {
+    padding: 3rem;
+    font-size: 100%;
+    background-color: rgb(32, 32, 31);
+    padding-top: 20%;
+    padding-bottom: 19.7%;
+}
+#pillars .pillar-image {
+    height:100%;
+    border-color: rgb(32, 32, 31);
+}
+#pillars .pillar-text p {
+    height:160px;
+}
+
+
+
+/* Events */
+#events {
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+#events .container {
+    padding-top: 10px;
+}
+
+/* Contact */
+#grad1 {
+    height: 500px;
+    background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(226, 224, 224),  black);
+}
+#contact {
+    background-color:black;
+    align-content: center;
+}
+#contact .container {
+    text-align: center;
+    align-content: center;
+}
+#contact .row{
+    align-self: center;
+    justify-content: center;
+}
+#contact .container h1{
+   color: black;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contact .container .card{
+    text-align: center;
+    vertical-align: center;
+}
+#contact img {
+    padding-bottom: 5px;
+    height: 50px;
+}
+#contact ion-icon {
+    color: lightgrey!important;
+    font-size: 40px!important;
+}
+#contact h4 {
+    color: lightgrey;
+    padding-bottom:40px;
+}
+
+/* Footer */
+.footer {
+    background-color:black;
+    align-content: center;
+    text-align: center;
+    color: rgb(226, 224, 224);
+}
