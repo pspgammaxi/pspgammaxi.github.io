@@ -232,7 +232,7 @@
 }
 
 /* Phone Settings  */
-@media (max-width: 767px){
+@media screen and (max-width: 600px){
     .phone-hidden{
         display: none;
     }
