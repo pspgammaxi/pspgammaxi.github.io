@@ -24,17 +24,12 @@
 .backgroundGrey hr {
     border-color: lightgray;
 }
-
-/* Phone Settings  */
-@media (max-width: 767px){
-    .phone-hidden{
-        display: none;
-    }
-
-    /* Navigation */
-    /* Header */
-
+.phone-only{
+    display: none;
 }
+
+
+
 
 /* Navigation */
 #nav-bar{
@@ -130,7 +125,6 @@
     padding: none;
 }
 
-
 /* About */
 #about .container{
     background-color: white;
@@ -171,14 +165,12 @@
     padding-bottom: 19.7%;
 }
 #pillars .pillar-image {
-    height:100%;
+    height:10%;
     border-color: rgb(32, 32, 31);
 }
 #pillars .pillar-text p {
     height:160px;
 }
-
-
 
 /* Events */
 #events {
@@ -225,8 +217,10 @@
     font-size: 40px!important;
 }
 #contact h4 {
-    color: lightgrey;
-    padding-bottom:40px;
+    color: lightgray;
+}
+#contact p{
+    font-size:120%;
 }
 
 /* Footer */
@@ -235,4 +229,40 @@
     align-content: center;
     text-align: center;
     color: rgb(226, 224, 224);
+}
+
+/* Phone Settings  */
+@media (max-width: 767px){
+    .phone-hidden{
+        display: none;
+    }
+    .phone-only{
+        display: inline;
+    }
+
+    .navbar-brand{
+        color: #000000!important;
+        font-weight: 30;
+        /* font-size: 16px; */
+    }
+
+    #pillars .pillar-text {
+        padding: 1rem;
+        font-size: 100%;
+        background-color: rgb(32, 32, 31);
+        padding-top: 5%;
+        height: 100%;
+    }
+
+    #pillars #leadership .pillar-text {
+        padding-bottom:25%;
+    }
+
+    #pillars #fellowship .pillar-text {
+        height: 110%;
+    }
+
+    #grad1 {
+        height: 100%
+    }
 }
