@@ -160,16 +160,21 @@
 #pillars .pillar-text {
     padding: 3rem;
     font-size: 100%;
-    background-color: rgb(32, 32, 31);
-    padding-top: 20%;
-    padding-bottom: 19.7%;
+    position: absolute;
+    top: 15%;
+    bottom:15%;
 }
+
 #pillars .pillar-image {
     height:10%;
-    border-color: rgb(32, 32, 31);
+    /* border-color: rgb(32, 32, 31); */
 }
 #pillars .pillar-text p {
     height:160px;
+}
+.committee {
+    height:417px;
+    background-color: rgb(32, 32, 31);
 }
 
 /* Events */
@@ -248,10 +253,10 @@
 
     #pillars .pillar-text {
         padding: 1rem;
-        font-size: 100%;
-        background-color: rgb(32, 32, 31);
-        padding-top: 5%;
-        height: 100%;
+        font-size: 65%;
+        position: absolute;
+        top: 0%;
+        bottom:0%;
     }
 
     #pillars #leadership .pillar-text {
@@ -265,4 +270,45 @@
     #grad1 {
         height: 100%
     }
+}
+
+@media screen and (max-width: 1000px){
+    .phone-hidden{
+        display: none;
+    }
+    .phone-only{
+        display: inline;
+    }
+
+    .navbar-brand{
+        color: #000000!important;
+        font-weight: 30;
+        /* font-size: 16px; */
+    }
+
+    #pillars .pillar-text {
+        padding: 1rem;
+        font-size: 100%;
+        position: absolute;
+        top: 0%;
+        bottom:0%;
+    }
+
+    #pillars #leadership .pillar-text {
+        padding-bottom:25%;
+    }
+
+    #pillars #fellowship .pillar-text {
+        height: 110%;
+    }
+
+    .committee {
+        height:580px;
+        background-color: rgb(32, 32, 31);
+    }
+
+    #grad1 {
+        height: 100%
+    }
+    
 }
